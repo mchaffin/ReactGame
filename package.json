@@ -1,7 +1,7 @@
 {
-  "name": "mern",
+  "name": "chiclet-game",
   "version": "1.0.0",
-  "description": "",
+  "description": "Chiclets Game",
   "main": "server.js",
   "engines": {
     "node": "8.9.4"
@@ -15,15 +15,24 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
-  "author": "",
+  "author": "Mark Chaffin",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^3.5.0",
     "nodemon": "^1.11.0"
   },
   "dependencies": {
-    "body-parser": "^1.17.2",
-    "express": "^4.15.4",
-    "if-env": "^1.0.4"
-  }
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "if-env": "^1.0.4",
+    "react": "^16.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mchaffin/ReactGame.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mchaffin/ReactGame/issues"
+  },
+  "homepage": "https://github.com/mchaffin/ReactGame#readme"
 }
