@@ -1,17 +1,20 @@
-import React from "react";
-
-
+import React from "react"
+import "./ScoreCard.css"
 
 const ScoreCard = props => (
-    <div className="score-card container">
-        <span>
-            <h4 className="font-italic">{props.message}</h4>
-            <h5>
-                Total Score : {props.score} |
-                Top Score : {props.topScore}
-            </h5>
-        </span>
+    <nav class="navbar">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav navbar">
+        <li><span>Click the Chiclet!</span></li>
+      </ul>
+      <ul class="nav navbar-nav navbar">
+        <li><span>{props.message}</span></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><span>Score: {props.score} - Top Score: {props.topScore}</span></li>
+      </ul>
     </div>
+  </nav>
 );
 
 export default ScoreCard;

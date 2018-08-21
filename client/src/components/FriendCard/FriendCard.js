@@ -1,5 +1,5 @@
-import React from "react";
-import "./FriendCard.css";
+import React from "react"
+import "./FriendCard.css"
 
 const fstyles = img => {
   return { "backgroundImage": `url(${img})` }

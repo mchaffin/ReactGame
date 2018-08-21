@@ -21,7 +21,7 @@ class App extends Component {
   // Setting this.state.friends to the friends json array also message , scores
 
   state = {
-    friendsList, message, score, topScore , buzz
+    friendsList, message, score, topScore, buzz
   };
 
 
@@ -47,13 +47,13 @@ class App extends Component {
           return a;
         });
       } else {
-        message = "You Guessed it Correct..."
+        message = "You guessed correctly..."
       }
     } else {
 
       score = 0;
       buzz = true;
-      message = "Oops! You Guessed it Incorrect..."
+      message = "Oops! You guessed incorrectly..."
       friendsList = friends.map(a => {
         a.selected = false
         return a;
@@ -75,16 +75,15 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Jumbotron />
         <ScoreCard
           message={this.state.message}
           score={this.state.score}
           topScore={this.state.topScore}
         />
-        {console.log(this.state)}
+        <Jumbotron />
         <Wrapper>
           {this.state.friendsList.map(friend => 
-            this.state.buzz?
+            this.state.buzz ?
             (<FriendCard
               handleClickItem={this.handleClickItem}
               id={friend.id}
